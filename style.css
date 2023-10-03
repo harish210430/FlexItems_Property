@@ -1,0 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* # Our Style */
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    border: 7px solid black;
+    /* vh : Viewport Height, vw : Viewport Width */
+    height: 100vh;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+}
+.box{
+    /* width: 300px; */
+    padding: 40px;
+    font-size: 28px;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+.box-1{background-color: blueviolet;}
+.box-2{background-color: rgb(227, 70, 104);}
+.box-3{background-color: rgb(60, 174, 174);}
+.box-4{background-color: rgb(58, 182, 81);}
+.box-5{background-color: rgb(210, 228, 74);}
+.box-6{background-color: rgb(185, 69, 118);}
+.box-7{background-color: rgb(93, 198, 230);}
+.box-8{background-color: rgb(226, 107, 43);}
+.box-9{background-color: rgb(15, 112, 232);}
+.box-10{background-color: rgb(14, 244, 137);}
+
+/* Flex-items Properties */
+
+/* 1.  Order:  Bydefault all the Flex-items has Order 0. It Accepts Unitless Value(Integers). 
+
+.box-1{
+    order: 1;
+}
+.box-3{
+    order: -1;
+}
+.box-7{
+    order: -3;
+} */
+
+/* 2.  Flex Property: flex-grow, flex-shrink, flex-basis */
+
+/* flex-grow & flex-shrink accept the unitless values, But can't be Negative.
+   flex-basis accepts value in Pixels.
+   flex is Shorthand Property: flex: f-g f-s f-b; */
+
+/* .box-1{
+    flex-basis: 400px;
+    flex-grow: 1; 
+    flex-grow, 0 is the default value.
+    flex-shrink: 1;
+    flex-shrink: 1;is the default value.
+}
+.box-2{ 
+    flex-basis: 400px;
+    flex-grow: 2;
+    flex-shrink: 2;
+}  */
+
+/* 3. Align-Self: it is similar to the align-items, Works on Cross Axis, Accepts similar values.
+      Difference: it is the flex-item property And align-item is flex-container property. */
+
+.box-1{
+    align-self: stretch;
+}
+.box-5{
+    align-self: center;
+}
+.box-10{
+    align-self: flex-end;
+}
